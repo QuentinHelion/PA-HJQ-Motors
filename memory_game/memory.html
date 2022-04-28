@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>jeu de mémoire</title>
+   <style>
+      h1 , p {
+        text-align:center;
+      }
+      #memory{
+        background: white;
+        width: 700px;
+        height:610px;
+        padding: 20px;
+        margin: auto;
+        display: grid; /* créer une grille pour le jeux */
+        grid-template-columns: repeat(4,160px); /* nombre de colonne répéter */
+        grid-gap: 20px; /* espace entre les image */
+      }
+
+      img{
+        width: 100%;
+        height: 100%;
+      }
+
+      span {
+        height: 190px;
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+    <h1>jeu de mémoire </h1>
+    <p> Score : <span id="score">0</span></p>
+    <div id='memory'>
+      <img src="pics/pic0.jpg">
+      <img src="pics/pic0.jpg">
+      <img src="pics/pic0.jpg">
+      <img src="pics/pic0.jpg">
+      <img src="pics/pic0.jpg">
+      <img src="pics/pic0.jpg">
+      <img src="pics/pic0.jpg">
+      <img src="pics/pic0.jpg">
+      <img src="pics/pic0.jpg">
+      <img src="pics/pic0.jpg">
+      <img src="pics/pic0.jpg">
+      <img src="pics/pic0.jpg">
+    </div>
+    <script src="memory.js" charset="utf-8"></script>
+  </body>
+</html>

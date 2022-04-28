@@ -1,0 +1,972 @@
+
+.bolosse
+{
+	/* classe pour la div du fond de l'img*/
+	background-image: url("../img/road1.jpg");
+	height: 60em;
+	width: 100%;
+	min-height: 40%;
+	min-width: 4%;
+	padding-top: 3em;
+	/* permet de d&caler la div connexion */
+	background-attachment: fixed;
+}
+
+.au
+{
+	/* div qui contient les infomrations de connexion */
+	border: 4px solid;
+	border-radius: 10px;
+	margin-left: 10%;
+	width: 35%;
+	max-width: 40%;
+	padding-bottom: 15%;
+	position: absolute;
+	height:50em;
+}
+
+
+.dd
+{
+	/* div qui contient les infomrations d'inscription */
+	border: 4px solid;
+	border-radius: 10px;
+	margin-left: 55%;
+	width: 35%;
+	max-width: 40%;
+	padding-bottom: 9%;
+	position: absolute;
+	height:50em;
+}
+
+/*------------------------------------ NOUVEL PAGE---------------------*/
+
+
+body
+{
+	margin: 0px;
+}
+
+.oo
+{
+	background-image: url("../img/s-1000-rr.jpg");
+	width: 100%;
+	height: 35em;
+	background-repeat: no-repeat;
+}
+
+.left2
+{
+	background-color: white;
+	display: flex;
+	padding-top: 0.5%;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	border: 5px solid black;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.left
+{
+	color: black;
+	align-items:center;
+	transition: 1s;
+	margin-left: 3em;
+	margin-right:3em;
+	font-weight: bold;
+}
+
+.ff
+{
+	border: 1px solid;
+	border-radius: 10px;
+	margin-left: 13%;
+	width: 30%;
+	max-width: 40%;
+	margin-top: 10%;
+	position: absolute;
+	overflow: hidden;
+}
+
+.gg
+{
+	border: 1px solid;
+	border-radius: 10px;
+	margin-left: 57%;
+	width: 30%;
+	max-width: 40%;
+	margin-top: 10%;
+	position: absolute;
+	overflow: hidden;
+}
+
+
+/*------------------------------------PAGE EQUIPEMENT------------------------------*/
+header
+{
+	margin-left: 6%;
+	margin-right: 6.3%;
+}
+
+.invisible
+{
+	/* permet de cacher les bouton pour la fonction en js */
+	visibility: hidden;
+}
+
+
+#culot{
+	background-color: #DBDBDB;
+}
+
+nav > div a.nav-item.nav-link,
+nav > div a.nav-item.nav-link.active,
+nav > div input.nav-item.nav-link
+{
+  border: none;
+  padding: 18px 25px;
+  color:#fff;
+  background:#272e38;
+  border-radius:0;
+
+	box-sizing: border-box;
+	border-color: #3c424b;
+	border-style: solid;
+	border-width: 0.5px;
+}
+
+nav > div input.nav-item.nav-link{
+  background:#52575f;
+}
+
+
+nav > div a.nav-item.nav-link:hover,
+nav > div a.nav-item.nav-link:focus
+{
+  border: none;
+    background: orange;
+    color:#fff;
+    border-radius:0;
+    transition:background 0.20s linear;
+}
+
+
+h3.h3
+{
+	text-align:center;
+	margin:1em;
+	font-weight:bold;
+} /* TITRE  */
+
+
+
+div#moto.product-grid {
+	padding: 0 0 65px !important;
+}
+
+div.col-md-4.col-sm-6.col-sx-12 > div.product-grid > div.product-content {
+	height: 90px !important;
+}
+
+	/********************* shopping Demo-1 **********************/
+
+	h3.h3{ /* TITRE  */
+	    text-align:center;
+	    margin:1em;
+	    font-weight:bold;
+	    }
+
+
+	.product-grid{
+	    text-align:center;
+	    padding:0 0 72px;
+	    border:1px solid rgba(0,0,0,.1);
+	    overflow:hidden;
+	    position:relative;
+	    z-index:1;
+	}
+
+
+	.product-grid .product-image img{
+	    width:100%;
+	    height:auto;
+	}
+
+
+
+	.product-grid .pic-2{/* permet a la deuxieme image de se mettre sur la premiere avec un effet de transition*/
+	    opacity:0;
+	    position:absolute;
+	    top:0;
+	    left:0;
+	    transition:all .3s ease-out 0s;
+	}
+
+	#equipement.product-grid:hover .pic-2{/* fais la transition d'image*/
+			transition: .3;
+	    opacity:1;
+	}
+
+	#moto.product-grid:hover .pic-2{/* fais la transition d'image*/
+			transition: .3;
+			opacity:.8;
+	}
+
+
+	.product-grid .product-discount-label,
+	.product-grid .product-new-label{/*taille des soldes, et couleur */
+	    color:#fff;
+	    background-color:#ef5777;
+	    font-size:12px;
+	    padding:2px 7px;
+	    display:block;
+	    position:absolute;
+	    top:10px;
+	    left:0
+	}
+
+	.product-grid .product-discount-label{ /* pour les soldes et réduction */
+	    background-color:#333;
+	    left:auto;
+	    right:0
+	}
+
+
+	.product-grid .product-content{/* partie base du block*/
+	    background-color:#fff;
+	    padding:12px 0;
+	    position:absolute;
+	    left:0;
+	    right:0;
+	    bottom:-27px;
+	    transition:all .3s
+	}
+
+	.product-grid:hover .product-content{/* ce qui donne l'effet de monter de liens et du prix */
+	    bottom:0
+	    }
+
+	.product-grid .title{/*taille du h3 */
+	    font-size:13px;
+	}
+	.product-grid .title a{ /*couleur de base  du h3 */
+	    color:black;
+	}
+
+
+	.product-grid .price{/* ligne pour le prix*/
+	    margin-bottom:8px;
+	    text-align:center;
+	    transition:all .3s;
+	    }
+	.product-grid .price span{/* ligne pour le prix*/
+	    text-decoration:line-through;
+	    margin-left:3px;
+	    display:inline-block
+	    }
+
+	.product-grid .add-to-cart{/* lien permettant d'ajouter au panier*/
+	    color:#000;
+	    font-size:13px;
+	    font-weight:600
+	}
+
+	.product-grid{margin-bottom:30px} /* espace entre les block*/
+/* pour le footer */
+
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+
+/* ==========BARRE DE FILTRE EQUIPEMENT========= */
+.filtre {
+background-color: #e83737;
+color: white;
+border: none;
+cursor: pointer;
+padding:20px;
+margin-top:20px;
+font-size: 30px;
+}
+.filtre:hover {
+background-color: #ff4444;
+}
+.menu_filtre {
+position: relative;
+display: inline-block;
+}
+.menu_deroule {
+display: none;
+background-color: #f28c8c;
+min-width: 50px;
+}
+.menu_deroule > button {
+color: white;
+padding: 20px;
+text-decoration: none;
+display: block;
+}
+.menu_filtre:hover .menu_deroule {
+display: block;
+}
+
+
+
+.boutonmenuprincipal {
+background-color: #e83737;
+color: white;
+border: none;
+cursor: pointer;
+padding:20px;
+margin-top:20px;
+font-size: 30px;
+}
+.boutonmenuprincipal:hover {
+background-color: #ff4444;
+}
+.dropdown {
+position: relative;
+display: inline-block;
+}
+.dropdown-child {
+display: none;
+background-color: #f28c8c;
+min-width: 50px;
+}
+.dropdown-child a {
+color: white;
+padding: 20px;
+text-decoration: none;
+display: block;
+}
+.dropdown:hover .dropdown-child {
+display: block;
+}
+
+
+
+/*------------------------------------
+	Member area
+------------------------------------*/
+.sidebar-item.active, .sidebar-item:hover {
+  background-color: #fff;
+  border: 1px solid #e6e7e9;
+  border-right: 0;
+  margin-right: -1px;
+}
+
+.sidebar-menu {
+  border-bottom: 1px solid #e6e7e9;
+  border-top: 1px solid #e6e7e9;
+  border-right: 1px solid #e6e7e9;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  background-color: #f4f4f4;
+}
+
+.sidebar-item {
+  position: relative;
+  display: block;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid transparent;
+}
+
+.sidebar-item.active:hover {
+  background-color: #fff;
+}
+
+.card .icon-big {
+  font-size: 3rem;
+}
+
+.card .icon-big .notif {
+  position: absolute;
+  min-width: 25px;
+  border-radius: 5rem;
+  font-size: 1rem;
+  background: #dc3545;
+  color: #fff;
+}
+
+.card .numbers {
+  text-align: right;
+}
+
+.card .numbers p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.card .footer {
+  padding: 0;
+  line-height: 30px;
+}
+
+.side-notif {
+  padding-left: 7px;
+  padding-right: 7px;
+  font-size: 0.8rem;
+  border-radius: 5rem;
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.statistics li {
+  padding: 0.25rem 0;
+}
+
+.member-item:hover .card {
+  background-color: #f4f4f4;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f4f4f4;
+}
+
+@media (max-width: 767.98px) {
+  .sidebar-item.active, .sidebar-item:hover {
+    border-right: 1px solid #e6e7e9;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+}
+/*============NAVBAR============*/
+nav > div a.nav-item.nav-link,
+nav > div a.nav-item.nav-link.active,
+nav > div input.nav-item.nav-link
+{
+  border: none;
+  padding: 18px 25px;
+  color:#fff;
+  background:#272e38;
+  border-radius:0;
+
+	box-sizing: border-box;
+	border-color: #3c424b;
+	border-style: solid;
+	border-width: 0.5px;
+}
+
+nav > div input.nav-item.nav-link{
+  background:#52575f;
+}
+
+nav > div a.nav-item.nav-link:hover,
+nav > div a.nav-item.nav-link:focus
+{
+  border: none;
+    background: orange;
+    color:#fff;
+    border-radius:0;
+    transition:background 0.20s linear;
+}
+/*===========EVENT LIST=======*/
+div.col-md-5.col-sm-8{
+  border:1px solid rgba(0,0,0,.1);
+  position:relative;
+  margin: auto;
+  /* width: 300px; */
+  height: 250px;
+  margin-top: 20px;
+}
+div.col-md-5.col-sm-8:hover{
+  box-shadow: 0 0 5px black;
+  transition: .2s;
+}
+
+
+/* ===========GOUT========= */
+.base {
+    background-image: url("https://source.unsplash.com/random/150x150");
+    position: relative;
+    height: 150px;
+    width: 150px;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+}
+
+.tenu {
+    border: solid 5px teal;
+}
+
+.case {
+    display: inline-block;
+    height: 160px;
+    width: 160px;
+    margin: 10px;
+    border: solid 3px black;
+    background: #fff;
+}
+/* ===== ANNONCES ==== */
+input#imageInputAnnonce{
+	margin: 3px;
+}
+button#creation.btn.btn-primary {
+	width: 15vw;
+}
+
+/* === PAGE */
+div.carousel-item.active{
+	/* max-height: 400px; */
+	overflow: hidden;
+	height: 43vh;
+}
+
+img#image-carousel{
+	/* min-height: 400px; */
+	transition: all 1s;
+
+}
+button, span{
+	color:black;
+}
+div#annonce.carousel-inner{
+	float:left;
+	width: 45%
+}
+p.lead.text-center{
+	min-height: 45vh;
+	padding-top: 4vh;
+}
+
+
+
+/* ===== EQUIPEMENT ===== */
+div#equipPage.container{
+	background-color: white;
+	max-width: 1170px;
+}
+
+div#list-same{
+	margin-top: 10em;
+}
+
+p#equipPage.lead {
+	font-size: 1.5em !important;
+	color: black;
+}
+
+div.container > h1#equipPage {
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+div#list-same-product{
+	display:flex;
+	overflow: scroll;
+	overflow-y: hidden;
+	overflow-x: scroll;
+}
+
+div#buy{
+	margin-top:5em;
+}
+
+div.col-md-2.col-sm-4.col-sx-6 {
+	margin-right: 30px;
+}
+
+h3.h3{ /* TITRE  */
+		text-align:center;
+		margin:1em;
+		font-weight:bold;
+		}
+
+
+.product-grid{
+		text-align:center;
+		padding:0 0 72px;
+		border:1px solid rgba(0,0,0,.1);
+		overflow:hidden;
+		position:relative;
+		z-index:1;
+}
+
+
+.product-grid .product-image img{
+		width:100%;
+		height:auto;
+}
+
+
+
+.product-grid .pic-2{/* permet a la deuxieme image de se mettre sur la premiere avec un effet de transition*/
+		opacity:0;
+		position:absolute;
+		top:0;
+		left:0;
+		transition:all .3s ease-out 0s;
+}
+
+.product-grid:hover .pic-2{/* fais la transition d'image*/
+		transition: .3;
+		opacity:1;
+}
+
+
+
+.product-grid .product-discount-label,
+.product-grid .product-new-label{/*taille des soldes, et couleur */
+		color:#fff;
+		background-color:#ef5777;
+		font-size:12px;
+		padding:2px 7px;
+		display:block;
+		position:absolute;
+		top:10px;
+		left:0
+}
+
+.product-grid .product-discount-label{ /* pour les soldes et réduction */
+		background-color:#333;
+		left:auto;
+		right:0
+}
+
+
+.product-grid .product-content{/* partie base du block*/
+		background-color:#fff;
+		padding:12px 0;
+		position:absolute;
+		left:0;
+		right:0;
+		bottom:-27px;
+		transition:all .3s
+}
+
+.product-grid:hover .product-content{/* ce qui donne l'effet de monter de liens et du prix */
+		bottom:0
+		}
+
+.product-grid .title{/*taille du h3 */
+		font-size:13px;
+}
+.product-grid .title a{ /*couleur de base  du h3 */
+		color:black;
+}
+
+
+.product-grid .price{/* ligne pour le prix*/
+		margin-bottom:8px;
+		text-align:center;
+		transition:all .3s;
+		}
+.product-grid .price span{/* ligne pour le prix*/
+		text-decoration:line-through;
+		margin-left:3px;
+		display:inline-block
+		}
+
+.product-grid .add-to-cart{/* lien permettant d'ajouter au panier*/
+		color:#000;
+		font-size:13px;
+		font-weight:600
+}
+
+.product-grid{margin-bottom:30px} /* espace entre les block*/
+
+hr#equip{
+	margin: auto;
+	margin-bottom: 15px;
+	width: 75%;
+}
+
+
+#MDP{
+background-image: url(../img/plant.jpg);
+
+}
+
+#SCANF{
+
+	text-align: center;
+	margin-top: 3em;
+}
+
+#BUTTON{
+ margin-top: 4em;
+
+ text-align: center;
+}
+
+
+#MDP2{
+	margin-top: 1em;
+	color: grey;
+	text-align: center;
+	font-size: 6vw;
+}
+
+
+/* ===== PANIER =====  */
+
+div#module{
+	border: 1px solid black;
+	background-color: white;
+}
+div > img#img-prod {
+	height: 17vh;
+	margin-top: auto;
+	margin-bottom: auto;
+	overflow: hidden;
+}
+h1#prix{
+	font-family:"impact";
+	color: #a5a5a5;
+	/* color: orange; */
+	font-size: 13vh;
+	z-index: 0;
+	position: absolute;
+	opacity: .8;
+}
+div#prod{
+	background-color: #ededed;
+	/* background-color: #7d8187; */
+}
+div > a#link {
+	position: absolute;
+	z-index: 1;
+}
+input#quantity{
+	/* margin-right: 1vw; */
+	width: 2.2vw;
+	height: 2.5vh;
+}
+a#link{
+	text-decoration: none;
+	color: black;
+}
+form#panier{
+	width:fit-content;
+	z-index: 1;
+}
+
+div.d-flex.align-content-between.flex-wrap{
+	z-index: 1;
+	height: 100%;
+	width: 2vw;
+}
+div#deleteProd:hover{
+	cursor: pointer;
+}
+
+/*===========EVENT LIST=======*/
+div.col-md-5.col-sm-8{
+  border:1px solid rgba(0,0,0,.1);
+  position:relative;
+  margin: auto;
+  /* width: 300px; */
+  height: 250px;
+  margin-top: 20px;
+}
+div.col-md-5.col-sm-8:hover{
+  box-shadow: 0 0 5px black;
+  transition: .2s;
+}
+
+
+/* ===========GOUT========= */
+.base {
+    background-image: url("https://source.unsplash.com/random/150x150");
+    position: relative;
+    height: 150px;
+    width: 150px;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+}
+
+.tenu {
+    border: solid 5px teal;
+}
+
+.case {
+    display: inline-block;
+    height: 160px;
+    width: 160px;
+    margin: 10px;
+    border: solid 3px black;
+    background: #fff;
+}
+
+/* ====== PROFIL =====  */
+div#infoReservation{
+	width: -webkit-fill-available;
+	padding: .7em;
+}
+div#infoReservation > div#title {
+	width: -webkit-fill-available;
+}
+div#infoReservation > div#title > a#h3 {
+	width: 95%;
+	color: black;
+}
+div#infoReservation > div#title > a#h3:hover {
+	color: blue;
+	text-decoration: none;
+}
+div#infoReservation > div#title > a#delete {
+	color: red;
+}
+
+.border-span {
+	display: block;
+	position: relative;
+}
+.border-span > span {
+	position: absolute;
+	font-size: 75%;
+	opacity: 1;
+	top: -.5em;
+	left: 0.75rem;
+	z-index: 3;
+	line-height: 1;
+	padding: 0 1px;
+}
+.border-span > span::after {
+	content: " ";
+	display: block;
+	position: absolute;
+	background: white;
+	height: 2px;
+	top: 50%;
+	left: -.2em;
+	right: -.2em;
+	z-index: -1;
+}
+div#reservation > img{
+	width: 60%;
+}
+div#reservation > a{
+	position: absolute;
+	z-index: 1
+}
+form > input#button {
+	margin: auto;
+}
+
+
+/* ==== INSCRIPTION === */
+#PAGE
+{
+	height: 100%;
+	width: 100%;
+	z-index: 997;
+	position: relative;
+	top: -1300px;
+
+}
+
+#fondI
+{
+	z-index: 999;
+	position: relative;
+	color: white;
+	padding-top: 5em;
+	top: 120px;
+
+	}
+
+body#inscription{
+	background-image: url(../img/sky.jpg);
+}
+
+/* PAGE de MOTO */
+#formulaire
+{
+	padding: 3em;
+	margin-top: 3em;
+	background-color: orange;
+	box-shadow: 10px 10px grey;
+	margin-bottom: 5em;
+}
+
+#res
+{
+	margin-top: 4em;
+	margin-left: 80%;
+}
+
+.btn-secondary
+{
+	font-weight: bold;
+}
+
+#decalage
+{
+	margin-left: 6%;
+	margin-right: 6.3%;
+	border:2px solid black;
+}
+
+#titre
+{
+	text-align: center;
+	font-size: 4vw;
+	font-weight: bold;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+}
+
+#texte
+{
+	text-align: justify;
+	font-size: 20px;
+	margin-right: 4em;
+}
+
+
+
+h3#motoPage
+{
+	margin-bottom: 1em;
+	font-weight: bold;
+}
+
+h2#motoPage
+{
+	margin-top: 3em !important;
+	text-align: center;
+}
+
+
+.parallax
+{
+	/* grosse image de centre**/
+	/* background-image: url("../img/AA.PNG"); */
+	min-height: 400px;
+	max-height: 800px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+form#motoPage > div > label,
+div#formulaire > h3
+{
+	color: white;
+	font-weight: bold;
+}
+
+div > h3#motoPage {
+	text-align: center;
+}
+/* FIN PAGE de MOTO */
+
+
+a#profil {
+	text-decoration: none;
+	color: black;
+}

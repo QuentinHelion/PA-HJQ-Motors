@@ -1,0 +1,363 @@
+
+@font-face
+{
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway-ExtraBoldItalic.woff2') format('woff2'),url('../fonts/Raleway-ExtraBoldItalic.woff') format('woff');
+	font-weight: 800;
+	font-style: italic;
+}
+
+@font-face
+{
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway-Bold.woff2') format('woff2'),url('../fonts/Raleway-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face
+{
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway-Italic.woff2') format('woff2'),url('../fonts/Raleway-Italic.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face
+{
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway-Regular.woff2') format('woff2'),url('../fonts/Raleway-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+/* ================ BODY ================ */
+body
+{
+	background-color: #DBDBDB;
+	/* couleur de fond du site*/
+}
+
+/*============NAVBAR============*/
+nav > div a.nav-item.nav-link,
+nav > div a.nav-item.nav-link.active,
+nav > div input.nav-item.nav-link
+{
+  border: none;
+  padding: 18px 25px;
+  color:#fff;
+  background:#272e38;
+  border-radius:0;
+
+	box-sizing: border-box;
+	border-color: #3c424b;
+	border-style: solid;
+	border-width: 0.5px;
+}
+
+nav > div input.nav-item.nav-link{
+  background:#52575f;
+}
+
+nav > div a.nav-item.nav-link:hover,
+nav > div a.nav-item.nav-link:focus
+{
+  border: none;
+    background: orange;
+    color:#fff;
+    border-radius:0;
+    transition:background 0.20s linear;
+}
+
+
+/* =======H1====== */
+h1{
+	font-size: 3.5vw;
+	margin-top:0.5em;
+	margin-left: 25%;
+	padding-bottom: 1em;
+}
+
+h1::after
+{
+	content: "";
+	display:block;
+	width: 68%;
+	height:3px;
+	background: black;
+	transform : scale(0);
+	transition: transform 0.7s ease-in-out;
+}
+
+h1:hover::after
+{
+	/* création d'une animation pour souligner le h1*/
+	transform: scale(1.5);
+}
+
+/*=====MAIN====*/
+/* ==MAIN ACTUALITE== */
+h2{
+	font-size: 2.5vw;
+}
+#gang::after
+{
+	content: "";
+	display:block;
+	width: 27%;
+	height:1.5px;
+	background: black;
+	transform : scale(0);
+	transition: transform 0.7s ease-in-out;
+}
+
+#gang:hover::after
+{
+	/* création d'une animation pour souligner le h2*/
+	transform: scale(1.5);
+}
+
+#gang
+{
+	margin-left: 43%;
+	padding-bottom: 1em;
+}
+/*========ACTUALITE=======*/
+.ho > a > h4{
+padding-left: 40em;
+padding-top:  12em;
+font-weight: bold;
+}
+
+
+
+.ho h4 {
+	color:#ECF0F1 ;
+	font-size:1.9em;
+}
+
+.parallax5 { /* grosse image de centre**/
+  background-image: url("../images/photo14.jpg");
+
+  min-height: 400px;
+  padding: 0;
+  background-attachment: fixed;
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cache {
+	margin-left: 50%;
+    display:none;
+    color:black;
+}
+
+.infoPlus{
+    cursor: pointer;
+    width: 80%;
+    margin-left: 12%;
+		margin-top: 10%;
+		font-size: 1.5em;
+		font-weight: bold;
+		color: black;
+}
+
+.infoPlus:hover > .cache{
+    display:block;
+    transition: .5s;
+    font-weight: bolder;
+}
+
+.infoPlus > p{
+		display: flex;
+    justify-content: flex-end;
+
+}
+
+.infoPlus > .cache > p{
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bolder;
+    text-align: center;
+    margin-top:2px;
+    font-size: 18px;
+    background-color:#F2F2F2;
+    position:absolute;
+    padding:10px;
+}
+
+
+.parallax6 { /* grosse image de centre**/
+  background-image: url("../images/photo12.jpg");
+
+  min-height: 400px;
+  padding: 0;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax7 { /* grosse image de centre**/
+  background-image: url("../images/photo13.jpg");
+
+  min-height: 400px;
+  padding: 0;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*===MAIN EVENEMENTS==*/
+   /* H2 EVENEMENT */
+#zang
+{
+	padding-top: 0.5em;
+	margin-left: 43%;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+#zang::after
+{
+	content: "";
+	display:block;
+	width: 26%;
+	height:1.5px;
+	background: black;
+	transform : scale(0);
+	transition: transform 0.7s ease-in-out;
+}
+
+#zang:hover::after
+{
+	/* création d'une animation pour souligner le h2*/
+	transform: scale(1.5);
+}       /* fin H2 EVENEMENT*/
+
+ /* === Iteneraire de balade === */
+ #evenement{
+	 padding-left:2em;
+	 padding-bottom: 1em;
+ }
+.parallax { /* grosse image de centre**/
+  min-height: 400px;
+  padding: 0;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+   /* === Iteneraire de balade === */
+        /* == EVENEMENT Jeu Concours == */
+
+.zo{ /* class du jeu concours */
+	margin-left: 15%;
+	margin-right: 13%;
+	padding-bottom: 2em;
+	padding-top: 6em;
+}
+#flotant{
+	margin-left: 30%;
+}
+#taille{
+	font-weight: normal;
+	font-size: 1.5em;
+}
+
+/* ==MAIN AUTRES ==*/
+#bang
+{
+	padding-top: 3em;
+	margin-left: 48%;
+	padding-bottom: 1em;
+}
+
+#bang::after
+{
+	content: "";
+	display:block;
+	width: 20%;
+	height:1.5px;
+	background: black;
+	transform : scale(0);
+	transition: transform 0.7s ease-in-out;
+}
+
+#bang:hover::after
+{
+	/* création d'une animation pour souligner le h2*/
+	transform: scale(1.5);
+}
+
+.jo
+{
+	margin-left: 15%;
+	margin-right: 13%;
+	padding-bottom: 6em;
+}
+
+#button
+{
+	margin-left: 86%;
+	margin-top: 2%;
+}
+
+/* =======FOOTER====== */
+section
+{
+    padding: 50px 0;
+}
+
+section .section-title
+{
+    text-align: center;
+    color: #007b5e;
+    text-transform: uppercase;
+}
+
+#color{
+	color:#ffffff;
+	margin-left: 1%;
+}
+
+#deplace{
+justify-content: center;
+align-items: center;
+background-size: cover;
+
+}
+
+#footer
+{
+    background: teal ;
+}
+
+#footer h5
+{
+	  margin-left: 2%;
+    color:#ffffff;
+}
+
+#footer a
+{
+	  margin-left: 2%;
+    color: #ffffff;
+    text-decoration: none ;
+    background-color: transparent;
+}
+
+h2#event, h4#event{
+	color: white;
+	text-decoration: none;
+}
+
+a{
+	text-decoration: none;
+}
